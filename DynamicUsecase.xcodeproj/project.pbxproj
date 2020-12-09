@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,48 @@
 		D70CDACB25812D80000D1BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70CDAC925812D80000D1BA1 /* Main.storyboard */; };
 		D70CDACD25812D81000D1BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D70CDACC25812D81000D1BA1 /* Assets.xcassets */; };
 		D70CDAD025812D81000D1BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70CDACE25812D81000D1BA1 /* LaunchScreen.storyboard */; };
+		D70CDAE125812DCD000D1BA1 /* FrameworkA.h in Headers */ = {isa = PBXBuildFile; fileRef = D70CDADF25812DCD000D1BA1 /* FrameworkA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D70CDAE425812DCD000D1BA1 /* FrameworkA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70CDADD25812DCD000D1BA1 /* FrameworkA.framework */; };
+		D70CDAE525812DCD000D1BA1 /* FrameworkA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D70CDADD25812DCD000D1BA1 /* FrameworkA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D70CDAF425812DD9000D1BA1 /* FrameworkB.h in Headers */ = {isa = PBXBuildFile; fileRef = D70CDAF225812DD9000D1BA1 /* FrameworkB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D70CDAF725812DD9000D1BA1 /* FrameworkB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70CDAF025812DD9000D1BA1 /* FrameworkB.framework */; };
+		D70CDAF825812DD9000D1BA1 /* FrameworkB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D70CDAF025812DD9000D1BA1 /* FrameworkB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D70CDB0025812E27000D1BA1 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = D70CDAFF25812E27000D1BA1 /* SFSafeSymbols */; };
+		D70CDB0525812E36000D1BA1 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = D70CDB0425812E36000D1BA1 /* SFSafeSymbols */; };
+		D70CDB0725812E3A000D1BA1 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = D70CDB0625812E3A000D1BA1 /* SFSafeSymbols */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D70CDAE225812DCD000D1BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D70CDAB825812D80000D1BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D70CDADC25812DCD000D1BA1;
+			remoteInfo = FrameworkA;
+		};
+		D70CDAF525812DD9000D1BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D70CDAB825812D80000D1BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D70CDAEF25812DD9000D1BA1;
+			remoteInfo = FrameworkB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D70CDAE925812DCD000D1BA1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D70CDAF825812DD9000D1BA1 /* FrameworkB.framework in Embed Frameworks */,
+				D70CDAE525812DCD000D1BA1 /* FrameworkA.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D70CDAC025812D80000D1BA1 /* DynamicUsecase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicUsecase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +65,12 @@
 		D70CDACC25812D81000D1BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D70CDACF25812D81000D1BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D70CDAD125812D81000D1BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70CDADD25812DCD000D1BA1 /* FrameworkA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70CDADF25812DCD000D1BA1 /* FrameworkA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkA.h; sourceTree = "<group>"; };
+		D70CDAE025812DCD000D1BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70CDAF025812DD9000D1BA1 /* FrameworkB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70CDAF225812DD9000D1BA1 /* FrameworkB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkB.h; sourceTree = "<group>"; };
+		D70CDAF325812DD9000D1BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +78,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70CDB0025812E27000D1BA1 /* SFSafeSymbols in Frameworks */,
+				D70CDAF725812DD9000D1BA1 /* FrameworkB.framework in Frameworks */,
+				D70CDAE425812DCD000D1BA1 /* FrameworkA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CDADA25812DCD000D1BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70CDB0525812E36000D1BA1 /* SFSafeSymbols in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CDAED25812DD9000D1BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70CDB0725812E3A000D1BA1 /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				D70CDAC225812D80000D1BA1 /* DynamicUsecase */,
+				D70CDADE25812DCD000D1BA1 /* FrameworkA */,
+				D70CDAF125812DD9000D1BA1 /* FrameworkB */,
 				D70CDAC125812D80000D1BA1 /* Products */,
+				D70CDB0325812E36000D1BA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				D70CDAC025812D80000D1BA1 /* DynamicUsecase.app */,
+				D70CDADD25812DCD000D1BA1 /* FrameworkA.framework */,
+				D70CDAF025812DD9000D1BA1 /* FrameworkB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +138,51 @@
 			path = DynamicUsecase;
 			sourceTree = "<group>";
 		};
+		D70CDADE25812DCD000D1BA1 /* FrameworkA */ = {
+			isa = PBXGroup;
+			children = (
+				D70CDADF25812DCD000D1BA1 /* FrameworkA.h */,
+				D70CDAE025812DCD000D1BA1 /* Info.plist */,
+			);
+			path = FrameworkA;
+			sourceTree = "<group>";
+		};
+		D70CDAF125812DD9000D1BA1 /* FrameworkB */ = {
+			isa = PBXGroup;
+			children = (
+				D70CDAF225812DD9000D1BA1 /* FrameworkB.h */,
+				D70CDAF325812DD9000D1BA1 /* Info.plist */,
+			);
+			path = FrameworkB;
+			sourceTree = "<group>";
+		};
+		D70CDB0325812E36000D1BA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D70CDAD825812DCD000D1BA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70CDAE125812DCD000D1BA1 /* FrameworkA.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CDAEB25812DD9000D1BA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70CDAF425812DD9000D1BA1 /* FrameworkB.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D70CDABF25812D80000D1BA1 /* DynamicUsecase */ = {
@@ -77,15 +192,63 @@
 				D70CDABC25812D80000D1BA1 /* Sources */,
 				D70CDABD25812D80000D1BA1 /* Frameworks */,
 				D70CDABE25812D80000D1BA1 /* Resources */,
+				D70CDAE925812DCD000D1BA1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D70CDAE325812DCD000D1BA1 /* PBXTargetDependency */,
+				D70CDAF625812DD9000D1BA1 /* PBXTargetDependency */,
+			);
+			name = DynamicUsecase;
+			packageProductDependencies = (
+				D70CDAFF25812E27000D1BA1 /* SFSafeSymbols */,
+			);
+			productName = DynamicUsecase;
+			productReference = D70CDAC025812D80000D1BA1 /* DynamicUsecase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D70CDADC25812DCD000D1BA1 /* FrameworkA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D70CDAE625812DCD000D1BA1 /* Build configuration list for PBXNativeTarget "FrameworkA" */;
+			buildPhases = (
+				D70CDAD825812DCD000D1BA1 /* Headers */,
+				D70CDAD925812DCD000D1BA1 /* Sources */,
+				D70CDADA25812DCD000D1BA1 /* Frameworks */,
+				D70CDADB25812DCD000D1BA1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DynamicUsecase;
-			productName = DynamicUsecase;
-			productReference = D70CDAC025812D80000D1BA1 /* DynamicUsecase.app */;
-			productType = "com.apple.product-type.application";
+			name = FrameworkA;
+			packageProductDependencies = (
+				D70CDB0425812E36000D1BA1 /* SFSafeSymbols */,
+			);
+			productName = FrameworkA;
+			productReference = D70CDADD25812DCD000D1BA1 /* FrameworkA.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D70CDAEF25812DD9000D1BA1 /* FrameworkB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D70CDAF925812DD9000D1BA1 /* Build configuration list for PBXNativeTarget "FrameworkB" */;
+			buildPhases = (
+				D70CDAEB25812DD9000D1BA1 /* Headers */,
+				D70CDAEC25812DD9000D1BA1 /* Sources */,
+				D70CDAED25812DD9000D1BA1 /* Frameworks */,
+				D70CDAEE25812DD9000D1BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrameworkB;
+			packageProductDependencies = (
+				D70CDB0625812E3A000D1BA1 /* SFSafeSymbols */,
+			);
+			productName = FrameworkB;
+			productReference = D70CDAF025812DD9000D1BA1 /* FrameworkB.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +262,12 @@
 					D70CDABF25812D80000D1BA1 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					D70CDADC25812DCD000D1BA1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D70CDAEF25812DD9000D1BA1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = D70CDABB25812D80000D1BA1 /* Build configuration list for PBXProject "DynamicUsecase" */;
@@ -110,11 +279,16 @@
 				Base,
 			);
 			mainGroup = D70CDAB725812D80000D1BA1;
+			packageReferences = (
+				D70CDAFE25812E27000D1BA1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = D70CDAC125812D80000D1BA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D70CDABF25812D80000D1BA1 /* DynamicUsecase */,
+				D70CDADC25812DCD000D1BA1 /* FrameworkA */,
+				D70CDAEF25812DD9000D1BA1 /* FrameworkB */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +301,20 @@
 				D70CDAD025812D81000D1BA1 /* LaunchScreen.storyboard in Resources */,
 				D70CDACD25812D81000D1BA1 /* Assets.xcassets in Resources */,
 				D70CDACB25812D80000D1BA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CDADB25812DCD000D1BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CDAEE25812DD9000D1BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +331,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D70CDAD925812DCD000D1BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70CDAEC25812DD9000D1BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D70CDAE325812DCD000D1BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D70CDADC25812DCD000D1BA1 /* FrameworkA */;
+			targetProxy = D70CDAE225812DCD000D1BA1 /* PBXContainerItemProxy */;
+		};
+		D70CDAF625812DD9000D1BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D70CDAEF25812DD9000D1BA1 /* FrameworkB */;
+			targetProxy = D70CDAF525812DD9000D1BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D70CDAC925812D80000D1BA1 /* Main.storyboard */ = {
@@ -319,6 +534,114 @@
 			};
 			name = Release;
 		};
+		D70CDAE725812DCD000D1BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FrameworkA/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.noppe.FrameworkA;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D70CDAE825812DCD000D1BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FrameworkA/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.noppe.FrameworkA;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D70CDAFA25812DD9000D1BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FrameworkB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.noppe.FrameworkB;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D70CDAFB25812DD9000D1BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FrameworkB/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.noppe.FrameworkB;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,7 +663,54 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D70CDAE625812DCD000D1BA1 /* Build configuration list for PBXNativeTarget "FrameworkA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D70CDAE725812DCD000D1BA1 /* Debug */,
+				D70CDAE825812DCD000D1BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D70CDAF925812DD9000D1BA1 /* Build configuration list for PBXNativeTarget "FrameworkB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D70CDAFA25812DD9000D1BA1 /* Debug */,
+				D70CDAFB25812DD9000D1BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D70CDAFE25812E27000D1BA1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/piknotech/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D70CDAFF25812E27000D1BA1 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70CDAFE25812E27000D1BA1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		D70CDB0425812E36000D1BA1 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70CDAFE25812E27000D1BA1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		D70CDB0625812E3A000D1BA1 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70CDAFE25812E27000D1BA1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D70CDAB825812D80000D1BA1 /* Project object */;
 }
